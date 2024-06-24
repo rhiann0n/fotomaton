@@ -1,0 +1,80 @@
+body{
+    font-family: Magneto;
+    background: rgb(224,174,238);
+    background: radial-gradient(circle, rgba(224,174,238,1) 0%, rgba(148,160,233,1) 100%);
+}
+
+#camara{
+    width: 100%;
+    height: auto;
+    border: #393465;
+    border-radius: 5px;
+    background-color: #fbe5fb;
+    box-shadow: 0 4px 8px 0 rgba(52, 52, 99, 0.5), 0 6px 20px 0 rgba(64, 64, 117, 0.5);
+}
+#photo-galery{
+    display: flex;
+    flex-wrap: wrap;  /*organizar segun contenedor y si tiene que bajar el contenido a otra linea..lo sigue organizando*/
+    gap: 10px;
+}
+
+.photo{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    background: rgb(105,50,119);
+    background: linear-gradient(90deg, rgba(105,50,119,1) 0%, rgba(127,105,204,1) 100%);
+}
+
+.photo-container{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.photo-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.photo-buttons button, button{
+    /* https://cssgradient.io/ */
+    background: rgb(218,118,244);
+    background: radial-gradient(circle, rgba(218,118,244,1) 0%, rgba(144,113,251,1) 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 2px;
+
+}
+.photo-buttons .delete-photo{
+    background: indianred;
+}
+.enVivo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+}
+.borde{
+    /* https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgb(57, 52, 101) 0px 54px 55px, rgba(64, 64, 117, 0.5) 0px -12px 30px, rgba(64, 64, 117, 0.5) 0px 4px 6px, rgba(52, 52, 99, 0.5) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+h1,h2{
+    color: rgb(255, 235, 255);
+    text-shadow: 2px 2px 5px rgb(78, 62, 78);
+    padding: 15px;
+}
+
+@media screen and (width<720px) {
+    .enVivo{
+        width: 100%;
+    }
+
+}
+/* generador de botones
+* https://markodenic.com/tools/buttons-generator/
+*/
